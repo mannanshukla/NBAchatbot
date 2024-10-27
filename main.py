@@ -15,7 +15,7 @@ embed_model = LangchainEmbedding(embedding_model)
 Settings.embed_model = embed_model
 
 # Load CSV data from Basketball Reference
-csv_path = "ref.csv"  # Replace with your actual CSV file path
+csv_path = "new.csv"  # Replace with your actual CSV file path
 data = pd.read_csv(csv_path)
 
 # Convert each row of the DataFrame into a Document for Llama Index
