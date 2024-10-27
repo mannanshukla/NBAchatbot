@@ -46,7 +46,6 @@ def get_player_image_url(response):
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-# ...
 # Enhanced HTML template with NBA logo background pattern and extended chat container
 html_template = """
 <!DOCTYPE html>
@@ -191,7 +190,7 @@ html_template = """
                 <div class="message bot">
                     <img src="{{ url_for('static', filename='pfp.png') }}" alt="Bot Profile Picture" class="bot-pfp">
                     <div class="response-text">
-                        <strong>Floyd.AI:</strong> {{ entry['response'] }}
+                        <strong>Giddy.AI:</strong> {{ entry['response'] }}
                         {% if entry['player_image_url'] %}
                             <img src="{{ entry['player_image_url'] }}" alt="Player Image" class="player-image">
                         {% endif %}
